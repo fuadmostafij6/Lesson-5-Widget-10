@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'Screen/HomePage/homepage.dart';
 import 'Screen/Lesson5/widget.dart';
+import 'Screen/Lesson7/lesson7.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +21,7 @@ class _MyAppState extends State<MyApp> {
     return const MaterialApp(
 
       debugShowCheckedModeBanner: false,
-home:Lesson6(),
+home:BNB(),
     );
   }
 }
