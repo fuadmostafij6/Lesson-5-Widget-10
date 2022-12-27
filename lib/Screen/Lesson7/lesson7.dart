@@ -8,6 +8,8 @@ import '../HomePage/homepage.dart';
 
 import 'package:hexcolor/hexcolor.dart';
 
+import 'Screen/ListViewScreen.dart';
+
 class BNB extends StatefulWidget {
   const BNB({Key? key}) : super(key: key);
 
@@ -23,7 +25,9 @@ class _BNBState extends State<BNB> {
   final list =[
     Homepage(), //0
     Search(), //1
+    ListViewScreen(),
     Profile(), //2
+
   ];
 
   @override
@@ -35,6 +39,7 @@ class _BNBState extends State<BNB> {
 
       BottomNavigationBar(
         unselectedItemColor: HexColor("#6BCD46"),
+        selectedItemColor: Colors.red,
         backgroundColor: Colors.black,
         currentIndex: selectedPage,
 onTap:(index){
@@ -48,6 +53,7 @@ onTap:(index){
 
           BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
           BottomNavigationBarItem(icon: Icon(Icons.search,),label: "Search"),
+          BottomNavigationBarItem(icon: Icon(Icons.list,),label: "ListView"),
           //BottomNavigationBarItem(icon: Icon(Icons.home_filled)),
           BottomNavigationBarItem(icon: Icon(Icons.person),label: "Profile"),
 
